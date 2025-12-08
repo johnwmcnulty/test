@@ -1,0 +1,5 @@
+{
+  "name": "CyberCube Secure Login - V3",
+  "description": "A modern, secure, and user-friendly login and authentication system for CyberCube users, featuring multi-factor authentication, account recovery, and robust security policies.",
+  "requestFramePermissions": []
+}
