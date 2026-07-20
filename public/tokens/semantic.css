@@ -1,0 +1,67 @@
+/* Sandow Design System — semantic aliases & typography helpers.
+   Layered on top of the raw Figma-variable tokens in fig-tokens.css.
+   Figma FLOAT tokens are unitless — consume as calc(var(--x) * 1px). */
+
+:root {
+  /* ── Type families ─────────────────────────────────────────── */
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; /* primary UI face */
+  --font-display: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;      /* display/foundations face */
+  --font-mono: "Roboto Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* ── Semantic color shorthands (light) ─────────────────────── */
+  --brand: var(--color-brand-500);            /* #F97316 */
+  --brand-strong: var(--color-brand-600);     /* #EA580C */
+  --brand-soft: var(--color-brand-50);        /* #FFF7ED */
+
+  --text-body: var(--color-text-default-primary);       /* zinc-900 */
+  --text-muted: var(--color-text-default-secondary);    /* zinc-600 */
+  --text-faint: var(--color-text-default-tertiary);     /* zinc-400 */
+  --text-on-brand: var(--color-bg-brand-on-primary);    /* white */
+
+  --surface-page: var(--color-bg-default-primary);      /* white */
+  --surface-subtle: var(--color-bg-default-secondary);  /* zinc-50 */
+  --surface-card: var(--color-base-white);
+  --surface-inverse: var(--color-bg-default-inverse);   /* zinc-800 */
+
+  --border-default: var(--color-border-default-tertiary);  /* zinc-200 */
+  --border-strong: var(--color-border-default-secondary);  /* zinc-300 */
+
+  /* ── Card & control geometry (as used across the kit) ──────── */
+  --radius-card: calc(var(--radius-600) * 1px);    /* 24px cards/inputs */
+  --radius-control: calc(var(--radius-400) * 1px); /* 16px md buttons */
+  --radius-pill: 9999px;
+
+  /* ── Shadows (kit uses whisper-light black alphas) ─────────── */
+  --shadow-card: 0 1px 2px rgba(0,0,0,0.05), 0 0 0 1px rgb(244,244,245);
+  --shadow-raised: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -2px rgba(0,0,0,0.05);
+  --shadow-overlay: 0 20px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.05);
+
+  /* ── Focus ring ────────────────────────────────────────────── */
+  --focus-ring: 0 0 0 calc(var(--effects-focus-ring-width-md) * 1px) var(--color-alpha-brand-200);
+}
+
+/* ── Type ramp helpers (family + size + leading + tracking) ── */
+.sandow-display-lg { font-family: var(--font-display); font-size: 180px; line-height: 188px; letter-spacing: -8px; font-weight: 700; }
+.sandow-display-md { font-family: var(--font-display); font-size: 128px; line-height: 136px; letter-spacing: -4px; font-weight: 700; }
+.sandow-display-sm { font-family: var(--font-display); font-size: 96px;  line-height: 104px; letter-spacing: -2px; font-weight: 700; }
+
+.sandow-heading-2xl { font-family: var(--font-display); font-size: 72px; line-height: 80px; letter-spacing: -1.5px; font-weight: 700; }
+.sandow-heading-xl  { font-family: var(--font-display); font-size: 60px; line-height: 68px; letter-spacing: -1px;   font-weight: 700; }
+.sandow-heading-lg  { font-family: var(--font-display); font-size: 48px; line-height: 56px; letter-spacing: -0.75px; font-weight: 700; }
+.sandow-heading-md  { font-family: var(--font-display); font-size: 36px; line-height: 44px; letter-spacing: -0.5px; font-weight: 700; }
+.sandow-heading-sm  { font-family: var(--font-display); font-size: 30px; line-height: 38px; letter-spacing: -0.25px; font-weight: 700; }
+.sandow-heading-xs  { font-family: var(--font-display); font-size: 24px; line-height: 32px; letter-spacing: -0.25px; font-weight: 700; }
+
+.sandow-text-2xl { font-family: var(--font-sans); font-size: 24px; line-height: 32px; letter-spacing: -0.25px; }
+.sandow-text-xl  { font-family: var(--font-sans); font-size: 20px; line-height: 28px; letter-spacing: -0.25px; }
+.sandow-text-lg  { font-family: var(--font-sans); font-size: 18px; line-height: 24px; }
+.sandow-text-md  { font-family: var(--font-sans); font-size: 16px; line-height: 22px; }
+.sandow-text-sm  { font-family: var(--font-sans); font-size: 14px; line-height: 20px; }
+.sandow-text-xs  { font-family: var(--font-sans); font-size: 12px; line-height: 16px; }
+.sandow-text-2xs { font-family: var(--font-sans); font-size: 10px; line-height: 14px; }
+
+.sandow-paragraph-md { font-family: var(--font-sans); font-size: 16px; line-height: 26px; }
+.sandow-paragraph-sm { font-family: var(--font-sans); font-size: 14px; line-height: 22px; }
+
+.sandow-label-md { font-family: var(--font-sans); font-size: 14px; line-height: 20px; letter-spacing: 1.5px; font-weight: 600; text-transform: uppercase; }
+.sandow-label-sm { font-family: var(--font-sans); font-size: 12px; line-height: 16px; letter-spacing: 1px; font-weight: 600; text-transform: uppercase; }

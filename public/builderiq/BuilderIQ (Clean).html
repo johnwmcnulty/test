@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BuilderIQ (Clean)</title>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#C8560F"/><g transform="translate(50 50)" fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"><path d="M-14 12 L-2 0 M-6 -4 a8 8 0 0 1 11 -6 l-6 6 5 5 6 -6 a8 8 0 0 1 -10 12 l-13 13 a3.5 3.5 0 0 1 -5 -5 Z"/></g></svg></template>
+<script>window.__bqClean = true; window.__bqNS = 'clean:';</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="hifi-theme.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<style>
+  html, body { margin: 0; height: 100%; background: #26231E; }
+  #root { height: 100%; }
+  .proto-stage { height: 100%; display: flex; flex-direction: column; }
+  .proto-bar {
+    flex: none; display: flex; align-items: center; gap: 8px;
+    padding: 8px 14px; background: #26231E; color: #A39B8B;
+    font-family: "Plus Jakarta Sans", sans-serif; font-size: 12px;
+  }
+  .proto-bar .seg {
+    display: flex; gap: 2px; background: #3A362E; border-radius: 999px; padding: 3px;
+  }
+  .proto-bar .seg button {
+    border: none; background: transparent; color: #A39B8B; font: inherit; font-weight: 600;
+    padding: 4px 14px; border-radius: 999px; cursor: pointer;
+  }
+  .proto-bar .seg button.on { background: #F97316; color: #fff; }
+  .proto-view { flex: 1; overflow: hidden; position: relative; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="hifi-ai.jsx"></script>
+<script type="text/babel" src="hifi-parts.jsx"></script>
+<script type="text/babel" src="hifi-ask-shared.jsx"></script>
+<script type="text/babel" src="hifi-assistant.jsx"></script>
+<script type="text/babel" src="hifi-brief.jsx"></script>
+<script type="text/babel" src="hifi-leads.jsx"></script>
+<script type="text/babel" src="hifi-dashboard.jsx"></script>
+<script type="text/babel" src="hifi-estimate.jsx"></script>
+<script type="text/babel" src="hifi-ai-estimate.jsx"></script>
+<script type="text/babel" src="hifi-proposal.jsx"></script>
+<script type="text/babel" src="hifi-money.jsx"></script>
+<script type="text/babel" src="hifi-money2.jsx"></script>
+<script type="text/babel" src="hifi-closeout.jsx"></script>
+<script type="text/babel" src="hifi-vendors.jsx"></script>
+<script type="text/babel" src="hifi-financing.jsx"></script>
+<script type="text/babel" src="hifi-documents.jsx"></script>
+<script type="text/babel" src="hifi-bids.jsx"></script>
+<script type="text/babel" src="hifi-meetings.jsx"></script>
+<script type="text/babel" src="hifi-adminpreview.jsx"></script>
+<script type="text/babel" src="hifi-payments.jsx"></script>
+<script type="text/babel" src="hifi-clients.jsx"></script>
+<script type="text/babel" src="hifi-workspace.jsx"></script>
+<script type="text/babel" src="hifi-schedule.jsx"></script>
+<script type="text/babel" src="hifi-tasks.jsx"></script>
+<script type="text/babel" src="hifi-selections.jsx"></script>
+<script type="text/babel" src="hifi-dailylogs.jsx"></script>
+<script type="text/babel" src="hifi-photos.jsx"></script>
+<script type="text/babel" src="hifi-invoices.jsx"></script>
+<script type="text/babel" src="hifi-expenses.jsx"></script>
+<script type="text/babel" src="hifi-watchdog.jsx"></script>
+<script type="text/babel" src="hifi-leakage.jsx"></script>
+<script type="text/babel" src="hifi-inbox.jsx"></script>
+<script type="text/babel" src="hifi-plan.jsx"></script>
+<script type="text/babel" src="hifi-quotes.jsx"></script>
+<script type="text/babel" src="hifi-reports.jsx"></script>
+<script type="text/babel" src="hifi-automations.jsx"></script>
+<script type="text/babel" src="hifi-platform.jsx"></script>
+<script type="text/babel" src="hifi-platform2.jsx"></script>
+<script type="text/babel" src="hifi-team.jsx"></script>
+<script type="text/babel" src="hifi-profile.jsx"></script>
+<script type="text/babel" src="hifi-weekly.jsx"></script>
+<script type="text/babel" src="hifi-sales.jsx"></script>
+<script type="text/babel" src="hifi-wip.jsx"></script>
+<script type="text/babel" src="hifi-catalog.jsx"></script>
+<script type="text/babel" src="hifi-ops.jsx"></script>
+<script type="text/babel" src="hifi-platform3.jsx"></script>
+<script type="text/babel" src="hifi-field.jsx"></script>
+<script type="text/babel" src="hifi-field2.jsx"></script>
+<script type="text/babel" src="hifi-field3.jsx"></script>
+<script type="text/babel" src="hifi-sub.jsx"></script>
+<script type="text/babel" src="hifi-portal.jsx"></script>
+<script type="text/babel" src="hifi-scoped.jsx"></script>
+<script type="text/babel" src="hifi-launch.jsx"></script>
+<script type="text/babel" src="hifi-print.jsx"></script>
+<script type="text/babel">
+const PROTO_DEFAULTS = {
+  aiVisible: true,
+  density: "comfortable",
+  dark: false
+};
+
+// builder-app screens reachable from the sidebar
+const BUILDER_SCREENS = {
+  'Dashboard': () => <HifiDashboard></HifiDashboard>,
+  'Portfolio': () => <HifiPortfolio></HifiPortfolio>,
+  'Leads': () => bqScoped('Leads', HifiLeads)(),
+  'AI Estimate': () => <HifiAiEstimate></HifiAiEstimate>,
+  'Estimates': () => bqScoped('Estimates', HifiEstimate)(),
+  'Proposals': () => bqScoped('Proposals', HifiProposal)(),
+  'Projects': () => <HifiBudget></HifiBudget>,
+  'Change Orders': () => bqScoped('Change Orders', HifiChangeOrders)(),
+  'Clients': () => <HifiClients></HifiClients>,
+  'Project Workspace': () => <HifiWorkspace></HifiWorkspace>,
+  'Schedule': () => bqScoped('Schedule', HifiSchedule)(),
+  'Tasks': () => bqScoped('Tasks', HifiTasks)(),
+  'Selections': () => bqScoped('Selections', HifiSelections)(),
+  'Daily Logs': () => bqScoped('Daily Logs', HifiDailyLogs)(),
+  'Photos': () => bqScoped('Photos', HifiPhotos)(),
+  'Invoices': () => bqScoped('Invoices', HifiInvoices)(),
+  'Expenses': () => bqScoped('Expenses', HifiExpenses)(),
+  'Purchase Orders': () => bqScoped('Purchase Orders', HifiPurchaseOrders)(),
+  'Subs & Vendors': () => bqScoped('Subs & Vendors', HifiVendors)(),
+  'Financing': () => bqScoped('Financing', HifiFinancing)(),
+  'Documents': () => bqScoped('Documents', HifiDocuments)(),
+  'Bid Requests': () => bqScoped('Bid Requests', HifiBids)(),
+  'Meetings': () => bqScoped('Meetings', HifiMeetings)(),
+  'Client view': () => <HifiClientPreview></HifiClientPreview>,
+  'Sub access': () => <HifiSubPreview></HifiSubPreview>,
+  'Time': () => bqScoped('Time', HifiTime)(),
+  'Closeout': () => bqScoped('Closeout', HifiCloseout)(),
+  'Lead Capture': () => <HifiLeadCapture></HifiLeadCapture>,
+  'Payments': () => bqScoped('Payments', HifiPayments)(),
+  'Watchdog': () => bqScoped('Watchdog', HifiWatchdog)(),
+  'Change Order Leakage': () => bqScoped('Change Order Leakage', HifiLeakage)(),
+  'AI Inbox': () => bqScoped('AI Inbox', HifiInbox)(),
+  'Plan Review': () => bqScoped('Plan Review', HifiPlan)(),
+  'Quote Comparison': () => bqScoped('Quote Comparison', HifiQuotes)(),
+  'Reports': () => bqScoped('Reports', HifiReports)(),
+  'Automations': () => <HifiAutomations></HifiAutomations>,
+  'Integrations': () => <HifiPlatform initial="integrations" active="Integrations"></HifiPlatform>,
+  'Developers': () => <HifiPlatform initial="developers" active="Developers"></HifiPlatform>,
+  'Permissions': () => <HifiPlatform initial="permissions" active="Permissions"></HifiPlatform>,
+  'Team': () => <HifiPlatform initial="team" active="Team"></HifiPlatform>,
+  'My Profile': () => <HifiProfile initial={window.__bqProfileTab || 'profile'}></HifiProfile>,
+  'Partners': () => <HifiPlatform initial="partners" active="Partners"></HifiPlatform>,
+  'Settings': () => <HifiPlatform initial="account" active="Settings"></HifiPlatform>,
+  'Weekly Update': () => bqScoped('Weekly Update', HifiWeekly)(),
+  'Sales Pipeline': () => bqScoped('Sales Pipeline', HifiSalesPipeline)(),
+  'Marketing': () => bqScoped('Marketing', HifiMarketing)(),
+  'Follow-ups': () => bqScoped('Follow-ups', HifiSequences)(),
+  'Cost Catalog': () => <HifiCatalog></HifiCatalog>,
+  'Takeoff': () => bqScoped('Takeoff', HifiTakeoff)(),
+  'WIP Report': () => bqScoped('WIP Report', HifiWip)(),
+  'Forecast': () => bqScoped('Forecast', HifiForecast)(),
+  'Capacity': () => bqScoped('Capacity', HifiCapacity)(),
+  'Procurement': () => bqScoped('Procurement', HifiProcurement)(),
+  'Setup': () => <HifiPlatform initial="setup" active="Settings"></HifiPlatform>,
+  'Billing': () => <HifiPlatform initial="billing" active="Settings"></HifiPlatform>,
+  'Audit Log': () => <HifiPlatform initial="audit" active="Settings"></HifiPlatform>,
+};
+const CLIENT_REDIRECT = { client: 'Client view', sub: 'Sub access' };
+
+const NAV_KEY = 'bq-' + (window.__bqNS || '') + 'proto-nav';
+
+function ProtoApp() {
+  const [t, setTweak] = useTweaks(PROTO_DEFAULTS);
+  const [nav, setNav] = React.useState(() => {
+    try {
+      const saved = JSON.parse(localStorage.getItem(NAV_KEY));
+      if (saved && ((saved.side === 'builder' && BUILDER_SCREENS[saved.screen]) || saved.side === 'field')) return saved;
+    } catch (e) {}
+    return { side: 'builder', screen: 'Dashboard' };
+  });
+
+  const go = React.useCallback((side, screen) => {
+    const next = { side, screen };
+    setNav(next);
+    setNavOpen(false);
+    try { localStorage.setItem(NAV_KEY, JSON.stringify(next)); } catch (e) {}
+  }, []);
+
+  const [cmdOpen, setCmdOpen] = React.useState(false);
+  const [navOpen, setNavOpen] = React.useState(false);
+
+  React.useEffect(() => {
+    window.__bqNav = (name) => {
+      if (BUILDER_SCREENS[name]) go('builder', name);
+    };
+    window.__bqNav2 = (side, screen) => {
+      if (side === 'field') return go('field', screen);
+      // "publish/send to client (or sub)" actions land the builder on the live mirror of that surface
+      if (CLIENT_REDIRECT[side]) return go('builder', CLIENT_REDIRECT[side]);
+      if (BUILDER_SCREENS[screen]) return go('builder', screen);
+      go('builder', 'Dashboard');
+    };
+    window.__bqCmdOpen = () => setCmdOpen(true);
+    const onKey = (e) => {
+      if ((e.metaKey || e.ctrlKey) && (e.key === 'k' || e.key === 'K')) { e.preventDefault(); setCmdOpen((o) => !o); }
+      if (e.key === 'Escape') setCmdOpen(false);
+    };
+    window.addEventListener('keydown', onKey);
+    return () => { delete window.__bqNav; delete window.__bqNav2; delete window.__bqCmdOpen; window.removeEventListener('keydown', onKey); };
+  }, [go]);
+
+  React.useEffect(() => {
+    window.__bqScreen = nav.side === 'field' ? 'Field' : nav.screen;
+    try { window.dispatchEvent(new Event('bq:navigate')); } catch (e) {}
+  }, [nav]);
+
+  const darkOn = t.dark && nav.side !== 'client' && nav.side !== 'sub';
+  const cls = 'bq-root'
+    + (t.aiVisible ? '' : ' ai-quiet')
+    + (t.density === 'compact' ? ' compact' : '')
+    + (navOpen ? ' bq-navopen' : '')
+    + (darkOn ? ' dark' : '');
+
+  window.__bqDark = darkOn;
+  window.__bqToggleDark = () => setTweak('dark', !t.dark);
+
+  const Screen = nav.side === 'field'
+    ? HifiField
+    : (BUILDER_SCREENS[nav.screen] || BUILDER_SCREENS['Dashboard']);
+
+  return (
+    <div className="proto-stage">
+      <div className="proto-bar">
+        <span style={{ fontWeight: 700, color: '#E7E3DB' }}>BuilderIQ (Clean)</span>
+        <span style={{ flex: 1 }}></span>
+        <span>Side:</span>
+        <div className="seg">
+          <button className={nav.side === 'builder' ? 'on' : ''} onClick={() => go('builder', 'Dashboard')}>Builder app</button>
+          <button className={nav.side === 'field' ? 'on' : ''} onClick={() => go('field', 'Field')}>Field app</button>
+        </div>
+        <span style={{ fontSize: 11, color: '#6E6759' }}>Send-out:</span>
+        <a href="BuilderIQ Client (Clean).html" target="_blank" rel="noopener" style={{ display: 'inline-flex', alignItems: 'center', gap: 5, padding: '5px 12px', borderRadius: 999, background: '#F97316', color: '#fff', fontWeight: 700, fontSize: 12, textDecoration: 'none' }}>Client app ↗</a>
+        <a href="BuilderIQ Sub (Clean).html" target="_blank" rel="noopener" style={{ display: 'inline-flex', alignItems: 'center', gap: 5, padding: '5px 12px', borderRadius: 999, background: '#3A362E', color: '#E7E3DB', fontWeight: 700, fontSize: 12, textDecoration: 'none' }}>Sub app ↗</a>
+      </div>
+      <div className="proto-view">
+        <div className={cls} style={{ height: '100%' }} data-screen-label={nav.screen}>
+          <Screen></Screen>
+          {nav.side === 'builder' ? <button className="bq-hamburger" aria-label="Menu" onClick={() => setNavOpen((o) => !o)}><BqIcon d="M4 7 H20 M4 12 H20 M4 17 H20" size={20} sw={2}></BqIcon></button> : null}
+          {nav.side === 'builder' ? <div className="bq-navscrim" onClick={() => setNavOpen(false)}></div> : null}
+          {nav.side === 'builder' ? <BqMobileTabs screen={nav.screen} onGo={(s) => go('builder', s)} onMenu={() => setNavOpen(true)}></BqMobileTabs> : null}
+          {nav.side === 'builder' ? <BqAssistant></BqAssistant> : null}
+          {cmdOpen ? <BqCommand onClose={() => setCmdOpen(false)}></BqCommand> : null}
+          <BqLaunchLayer side={nav.side}></BqLaunchLayer>
+          <TweaksPanel>
+            <TweakSection label="BuilderIQ" />
+            <TweakToggle label="AI front and center" value={t.aiVisible} onChange={(v) => setTweak('aiVisible', v)} />
+            <TweakToggle label="Dark mode" value={t.dark} onChange={(v) => setTweak('dark', v)} />
+            <TweakRadio label="Density" value={t.density} options={["comfortable", "compact"]} onChange={(v) => setTweak('density', v)} />
+          </TweaksPanel>
+        </div>
+      </div>
+    </div>
+  );
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<ProtoApp></ProtoApp>);
+</script>
+</body>
+</html>

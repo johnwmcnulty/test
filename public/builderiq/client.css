@@ -1,0 +1,110 @@
+/* BuilderIQ - standalone homeowner app. Layered on Sandow tokens + hifi-theme.css. Always light, premium. */
+html, body { margin: 0; height: 100%; }
+body { background: #E7E1D7; }
+#root { height: 100%; }
+
+.cl-shell {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #F4F1EB;
+  font-family: var(--font-sans, "Plus Jakarta Sans", sans-serif);
+  color: var(--bq-ink);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* ── brand header ── */
+.cl-header {
+  flex: none;
+  display: flex; align-items: center; gap: 13px;
+  padding: 13px 28px;
+  background: var(--bq-card);
+  border-bottom: 1px solid var(--bq-border);
+}
+.cl-brandmark {
+  width: 36px; height: 36px; border-radius: 10px;
+  background: var(--bq-ink); color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-display); font-weight: 700; font-size: 12.5px;
+  flex: none;
+}
+.cl-brandname { font-weight: 700; font-size: 15px; }
+.cl-headproj { font-size: 12px; color: var(--bq-faint); }
+.cl-avatar {
+  width: 36px; height: 36px; border-radius: 50%;
+  background: var(--bq-brand-soft); color: var(--bq-brand-strong);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 13px; font-weight: 700; flex: none;
+  box-shadow: inset 0 0 0 1px var(--bq-brand-border);
+}
+
+/* ── tab nav ── */
+.cl-nav {
+  flex: none;
+  display: flex; gap: 4px;
+  padding: 9px 22px;
+  background: var(--bq-card);
+  border-bottom: 1px solid var(--bq-border);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.cl-nav::-webkit-scrollbar { display: none; }
+.cl-tab {
+  position: relative;
+  display: flex; align-items: center; gap: 8px;
+  border: none; background: transparent; font: inherit;
+  font-weight: 600; font-size: 13.5px; color: var(--bq-muted);
+  padding: 8px 15px; border-radius: 999px; cursor: pointer; white-space: nowrap;
+  transition: background 0.15s, color 0.15s;
+}
+.cl-tab:hover { background: var(--bq-subtle); }
+.cl-tab.on { background: var(--bq-ink); color: #fff; }
+.cl-tab .dot {
+  min-width: 17px; height: 17px; padding: 0 5px; border-radius: 999px;
+  background: var(--bq-brand); color: #fff; font-size: 10px; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+}
+
+/* ── content ── */
+.cl-main { flex: 1; overflow: auto; }
+.cl-wrap {
+  width: min(940px, 92%); margin: 0 auto;
+  padding: 26px 0 96px;
+  display: flex; flex-direction: column; gap: 18px;
+}
+.cl-h { font-family: var(--font-display, "Work Sans", sans-serif); font-weight: 700; letter-spacing: -0.5px; }
+.cl-eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; color: var(--bq-faint); }
+
+/* premium card softening for the client surface */
+.cl-shell .bq-card-s { box-shadow: 0 1px 2px rgba(38,35,30,0.04), 0 0 0 1px var(--bq-border); }
+.cl-pad { background: radial-gradient(120% 90% at 30% 20%, #EFEBE2 0%, #E3DDD0 100%); border-radius: 14px; display: flex; align-items: center; justify-content: center; color: var(--bq-faint); font-size: 11.5px; font-weight: 600; position: relative; overflow: hidden; }
+
+/* action tile (Home "needs you") */
+.cl-action {
+  display: flex; align-items: center; gap: 13px;
+  padding: 15px 17px; border-radius: 16px; cursor: pointer;
+  background: var(--bq-card); border: none;
+  box-shadow: 0 1px 2px rgba(38,35,30,0.04), 0 0 0 1px var(--bq-border);
+  text-align: left; font: inherit; width: 100%;
+  transition: transform 0.12s, box-shadow 0.12s;
+}
+.cl-action:hover { transform: translateY(-1px); box-shadow: 0 6px 18px rgba(38,35,30,0.10), 0 0 0 1px var(--bq-border); }
+.cl-action .ic {
+  width: 42px; height: 42px; border-radius: 12px; flex: none;
+  display: flex; align-items: center; justify-content: center;
+}
+
+/* message bubbles */
+.cl-bubble { max-width: 74%; padding: 11px 15px; border-radius: 18px; font-size: 14px; line-height: 1.5; }
+.cl-bubble.them { background: var(--bq-card); box-shadow: inset 0 0 0 1px var(--bq-border); border-bottom-left-radius: 5px; align-self: flex-start; }
+.cl-bubble.me { background: var(--bq-brand); color: #fff; border-bottom-right-radius: 5px; align-self: flex-end; }
+.cl-bubble .meta { font-size: 11px; margin-top: 4px; opacity: 0.7; }
+
+.cl-field {
+  width: 100%; box-sizing: border-box; font: inherit; font-size: 14px;
+  padding: 11px 14px; border-radius: 12px;
+  border: 1px solid var(--bq-border); background: var(--bq-subtle); color: var(--bq-ink);
+  outline: none;
+}
+.cl-field:focus { border-color: var(--bq-brand); background: #fff; box-shadow: 0 0 0 3px rgba(249,115,22,0.12); }
